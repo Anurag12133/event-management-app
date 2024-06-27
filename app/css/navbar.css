@@ -11,9 +11,13 @@ body {
   align-items: center;
   padding: 20px 0; /* Increased padding for spacing */
   margin: 0;
-  background-color: #efe5b0;
+
   font-family: "Permanent Marker";
   box-sizing: border-box;
+
+  margin: 50px;
+  padding: 0;
+  justify-content: space-around;
 }
 
 .navbar-inner {
@@ -22,11 +26,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fcfbba; /* Background color for the navbar */
-  padding: 10px 20px; /* Padding for content inside the navbar */
-  border: 2px solid #ccc; /* Border color and width */
-  border-radius: 50px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  padding: 20px 20px;
+  /* Padding for content inside the navbar */
 }
 
 .login-image {

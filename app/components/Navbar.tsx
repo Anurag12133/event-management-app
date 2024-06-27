@@ -18,8 +18,10 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div className="navbar">
-      <div className="navbar-inner">
+      <div>
         <img src="/reindeer.png" alt="Login" className="login-image" />
+      </div>
+      <div className="navbar-inner">
         <div className="navbar-menu-container">
           <Menu setActive={setActive}>
             <MenuItem setActive={setActive} active={active} item="Services">
@@ -72,6 +74,8 @@ function Navbar({ className }: { className?: string }) {
             </MenuItem>
           </Menu>
         </div>
+      </div>
+      <div>
         <button className="login-button">Login</button>
       </div>
     </div>
