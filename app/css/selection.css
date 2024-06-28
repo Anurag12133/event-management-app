@@ -1,0 +1,23 @@
+.selection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.one {
+  width: 100%;
+    height: 100vh;
+    background-color: green;
+    grid-column: 1;
+
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1/5;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
