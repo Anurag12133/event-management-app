@@ -1,18 +1,22 @@
 "use client";
 import "../../css/selection.css";
-import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
+import { useRouter } from "next/navigation";
 
-const ThreeDCardDemo = () => {
+const selection = () => {
+  const router = useRouter();
+  const handelButton = () => {
+    router.push("/pages/organiser");
+  };
   return (
     <div className="selection-container">
       <div
-        className="one"
+        className="organiser"
         style={{ display: "flex", flexDirection: "column", gap: 0 }}
       >
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6 border cursor-pointer">
+          <CardBody className=" relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6 border cursor-pointer">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -28,6 +32,7 @@ const ThreeDCardDemo = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <img
+                onClick={handelButton}
                 src="/Images/organiser.png"
                 height="1000"
                 width="1000"
@@ -39,9 +44,12 @@ const ThreeDCardDemo = () => {
           </CardBody>
         </CardContainer>
       </div>
-      <div className="two">
+      <div
+        className="participent"
+        style={{ display: "flex", flexDirection: "column", gap: 0 }}
+      >
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6 border cursor-pointer">
+          <CardBody className="bg-cream relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-3xl p-6 border cursor-pointer">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -72,4 +80,4 @@ const ThreeDCardDemo = () => {
   );
 };
 
-export default ThreeDCardDemo;
+export default selection;
