@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/app/utils/cn";
 import "@/app/css/navbar.css";
 import "@/public/reindeer.png";
 import "@fontsource/permanent-marker";

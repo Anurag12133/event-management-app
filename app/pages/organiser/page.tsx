@@ -43,7 +43,25 @@ const Organiser = () => {
             </div>
           )}
         </div>
-        <div className="description"></div>
+        <div className="description-container">
+          <div className="des-title">Description</div>
+          <div className="card">
+            <h2>
+              <svg className="icon" aria-hidden="true">
+                <use href="#icon-coffee" />
+              </svg>
+              Regular
+            </h2>
+            <label className="input">
+              <input className="input__field" type="text" placeholder=" " />
+              <span className="input__label">Some Fancy Label</span>
+            </label>
+            <div className="button-group">
+              <button>Send</button>
+              <button type="reset">Reset</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="details">Bye</div>
       <div className="additional-details">Hye</div>
