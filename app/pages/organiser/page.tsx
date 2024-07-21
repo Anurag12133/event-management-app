@@ -45,20 +45,24 @@ const Organiser = () => {
         </div>
         <div className="description-container">
           <div className="des-title">Description</div>
-          <div className="card">
+          <div className="card card--inverted">
             <h2>
+              {" "}
               <svg className="icon" aria-hidden="true">
                 <use href="#icon-coffee" />
               </svg>
-              Regular
             </h2>
             <label className="input">
-              <input className="input__field" type="text" placeholder=" " />
-              <span className="input__label">Some Fancy Label</span>
+              <input
+                className="input__field"
+                type="text"
+                placeholder=" "
+                value="Valuable value"
+              />
             </label>
+
             <div className="button-group">
               <button>Send</button>
-              <button type="reset">Reset</button>
             </div>
           </div>
         </div>
